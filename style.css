@@ -1,0 +1,188 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Sofia", sans-serif;
+}
+.link {
+    font-family: "Sofia", sans-serif;
+}
+
+.nav-header {
+    font-family: "Sofia", sans-serif;
+    width: 100%;
+    height: 45px;
+    padding: 15px 55px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(79deg, rgba(217, 30, 189, 0.694), rgb(244, 112, 75), rgba(217, 30, 189, 0.694));
+}
+
+.nav-header h3, a, h5 {
+    font-family: 'montserrat sans-serif';
+    font-size: 15px;
+}
+
+.link ,  .btn-logout {
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    
+}
+
+.signup-form {
+    border: 1px solid gray;
+    padding: 20px;
+    width: 22%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; /* Adding transition for smooth effect */
+}
+
+.signup-container:hover .signup-form {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Adjusted shadow on hover */
+}
+
+.form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom : 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 2px solid pink;
+    transition: border 0.3s ease; /* Adding transition for smooth effect */
+}
+
+.form input:hover {
+    border: 2px solid rgb(249, 100, 59); /* Change border color on hover */
+}
+
+.signup-form button,
+.form button , .btn-logout {
+    width: 100%;
+    border: 2px solid rgb(244, 112, 75);
+    padding: 4px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: 0.3s ease, color 0.3s ease; /* Adding transition for smooth effect */
+}
+.form h2 , .signup-form h2 {
+    margin-bottom: 5px;
+}
+.post_btn button {
+    width: 100%;
+    border: 2px solid rgb(244, 112, 75);
+    padding: 4px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: 0.3s ease, color 0.3s ease; /* Adding transition for smooth effect */
+}
+
+.signup-form button:hover,
+.form button:hover , .btn-logout:hover, .post_form button:hover, .post_btn button:hover {
+    background: linear-gradient(79deg,rgb(244, 112, 75), rgba(234, 61, 208, 0.694), rgb(244, 112, 75));; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+    box-shadow: 0 0 10px rgba(24, 20, 20, 0.059); /* Add a subtle glow effect */
+    transform: translateY(-2px);
+}
+.btn-logout{
+    background-color: transparent;
+    border: none;
+    font-weight: bolder;
+    margin : 2px;
+
+}
+
+.post-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the height of the container to 100% of the viewport height */
+}
+.post_form{
+    width: 40%;
+    border: 1px solid grey; 
+    padding: 20px;
+}
+.post_form input, .post_form textarea , .post_form button {
+    width: 100%;
+    margin: 10px 0px;
+    padding : 8px;
+}
+.post_form .file {
+    border: 1px solid grey;
+}
+.post_form button {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background: linear-gradient(79deg,rgb(244, 112, 75), rgba(234, 61, 208, 0.694), rgb(244, 112, 75));; /* Change background color on hover */
+    color: white;
+}
+.posts-container {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 40px;
+    height: 100vh;
+  }
+  .getposts-container {
+    border-radius: 3px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    gap: 20px;
+    margin: 40px;
+  }
+  .getpost img {
+    max-width: 100%;
+    max-height: 300px;
+    margin-top: 10%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .post ,.getpost  {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    aspect-ratio: 1.5/1; /* Maintain a square aspect ratio */
+    overflow: hidden;
+    
+  }  .link_text{
+    text-decoration: none;
+  }
+  
+  .post img {
+    max-width: 100%;
+    max-height: 100px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .post h3 {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .post p {
+    margin: 10px 0;
+    text-decoration: none;
+    color: #555;
+  }
+  
